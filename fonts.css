@@ -1,0 +1,29 @@
+/* Polices locales — CSP stricte préservée (aucune requête externe) */
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/karla-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/karla-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/playfair-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/playfair-700.ttf") format("truetype");
+}
