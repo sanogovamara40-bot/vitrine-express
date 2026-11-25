@@ -42,7 +42,7 @@ Je vous prépare le site et vous l'envoie demain. Le paiement de 25 000 FCFA se 
 
 Bonjour ! ✅ Votre site est prêt.
 
-Voici le lien : [LIEN DU SITE]
+Voici le lien : https://vitrine-express-seven.vercel.app
 
 Il fonctionne sur téléphone et sur ordinateur. Vous pouvez le partager sur Facebook, WhatsApp et Instagram.
 

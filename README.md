@@ -22,6 +22,12 @@ Service de création de sites vitrines en 24h, payé par mobile money (Wave, Ora
 
 Aucune modification nécessaire avant mise en ligne.
 
+## 🌐 Site en ligne
+
+**https://vitrine-express-seven.vercel.app**
+
+À partager sur Facebook, WhatsApp et Instagram. Les textes prêts à publier sont dans `textes-marketing.md`.
+
 ## Déploiement
 
 Le dossier est prêt pour Vercel (fichiers statiques, aucun build nécessaire).
