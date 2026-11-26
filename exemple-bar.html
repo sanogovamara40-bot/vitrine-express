@@ -16,6 +16,8 @@
         <nav class="nav">
           <a href="#carte">La carte</a>
           <a href="#galerie">Galerie</a>
+          <a href="#evenements">Événements</a>
+          <a href="#avis">Avis</a>
           <a href="#infos">Infos & accès</a>
           <a href="#contact">Réserver</a>
         </nav>
@@ -49,7 +51,7 @@
           <h2 class="bar-section-title">De quoi régaler tout le monde</h2>
           <p class="bar-section-sub">Des plats faits maison et des boissons pour tous les goûts.</p>
           <div class="bar-menu-grid">
-            <div class="bar-card bar-card-photo">
+            <div class="bar-card bar-card-photo reveal">
               <img src="/photos/plat.jpg" alt="Plat du jour servi au Nôtre" loading="lazy" />
               <div class="bar-card-body">
                 <span class="bar-num">01</span>
@@ -58,7 +60,7 @@
                 <span class="bar-price">dès 2 500 FCFA</span>
               </div>
             </div>
-            <div class="bar-card bar-card-photo">
+            <div class="bar-card bar-card-photo reveal">
               <img src="/photos/cocktail.jpg" alt="Cocktail signature du Nôtre" loading="lazy" />
               <div class="bar-card-body">
                 <span class="bar-num">02</span>
@@ -67,7 +69,7 @@
                 <span class="bar-price">dès 1 000 FCFA</span>
               </div>
             </div>
-            <div class="bar-card bar-card-photo">
+            <div class="bar-card bar-card-photo reveal">
               <img src="/photos/dessert.jpg" alt="Dessert maison du Nôtre" loading="lazy" />
               <div class="bar-card-body">
                 <span class="bar-num">03</span>
@@ -90,6 +92,59 @@
             <img src="/photos/plat.jpg" alt="Assiette servie au Nôtre" loading="lazy" />
             <img src="/photos/cocktail.jpg" alt="Cocktails au bar du Nôtre" loading="lazy" />
             <img src="/photos/dessert.jpg" alt="Dessert au Nôtre" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section id="evenements" class="bar-events">
+        <div class="container">
+          <p class="eyebrow dark">ÉVÉNEMENTS & PROMOS</p>
+          <h2 class="bar-section-title">Toujours quelque chose à vivre</h2>
+          <p class="bar-section-sub">Happy hours, soirées et bonnes surprises — les offres expirées disparaissent automatiquement.</p>
+          <div class="bar-menu-grid">
+            <div class="bar-card promo reveal" data-fin="2026-12-20">
+              <span class="bar-promo-tag">EN COURS</span>
+              <h3>Happy hour</h3>
+              <p>Bières et cocktails à prix doux, du lundi au vendredi de 17h à 19h.</p>
+              <span class="bar-price">-20 % sur les boissons</span>
+            </div>
+            <div class="bar-card promo reveal" data-fin="2026-12-31">
+              <span class="bar-promo-tag">À VENIR</span>
+              <h3>Soirée live</h3>
+              <p>Un artiste différent chaque samedi pour animer votre soirée.</p>
+              <span class="bar-price">Samedi · dès 20h</span>
+            </div>
+            <div class="bar-card promo reveal" data-fin="2026-11-20">
+              <span class="bar-promo-tag">TERMINÉ</span>
+              <h3>Semaine gourmande</h3>
+              <p>Formule spéciale découverte de la carte, réservée aux habitués.</p>
+              <span class="bar-price">Offre terminée</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="avis" class="bar-avis">
+        <div class="container">
+          <p class="eyebrow dark">AVIS CLIENTS</p>
+          <h2 class="bar-section-title">Ils ont aimé Le Nôtre</h2>
+          <p class="bar-section-sub">Des avis de clients, publiés après validation.</p>
+          <div class="bar-menu-grid">
+            <div class="bar-card bar-avis-card reveal">
+              <div class="bar-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+              <p>« L'attieké est excellent et l'ambiance vraiment agréable. Je reviens chaque semaine. »</p>
+              <span class="bar-avis-meta"><strong>Amina K.</strong> · 12 novembre 2026</span>
+            </div>
+            <div class="bar-card bar-avis-card reveal">
+              <div class="bar-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+              <p>« Un bon endroit pour se retrouver entre amis. Les cocktails sont au top ! »</p>
+              <span class="bar-avis-meta"><strong>Jean-Marc B.</strong> · 3 novembre 2026</span>
+            </div>
+            <div class="bar-card bar-avis-card reveal">
+              <div class="bar-stars" aria-label="4 étoiles sur 5">★★★★☆</div>
+              <p>« Service chaleureux, plats généreux. Une très bonne adresse à Cocody. »</p>
+              <span class="bar-avis-meta"><strong>Fatou D.</strong> · 28 octobre 2026</span>
+            </div>
           </div>
         </div>
       </section>
@@ -150,7 +205,10 @@
           <p class="bar-lead">
             Écrivez-nous sur WhatsApp — réponse garantie en moins d'une heure.
           </p>
-          <a class="btn btn-accent" href="https://wa.me/2250715899410" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+          <div class="bar-cta-row">
+            <a class="btn btn-accent" href="https://wa.me/2250715899410" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+2250715899410">Appeler maintenant</a>
+          </div>
         </div>
       </section>
     </main>
@@ -161,5 +219,7 @@
         <span>Exemple de site professionnel — à personnaliser.</span>
       </div>
     </footer>
+
+    <script src="/exemple-bar.js" defer></script>
   </body>
 </html>
