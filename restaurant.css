@@ -1,0 +1,146 @@
+/* Maquette restaurant — tons terre et orange, mobile first */
+:root {
+  --r-terre: #3f2416;
+  --r-terre-clair: #6b4426;
+  --r-orange: #e0701f;
+  --r-orange-fonce: #b8530f;
+  --r-creme: #fff8f0;
+  --r-sable: #f6ead9;
+  --r-texte: #2c1a10;
+  --r-vert: #17924a;
+  --r-radius: 16px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Karla, sans-serif;
+  color: var(--r-texte);
+  background: var(--r-creme);
+  line-height: 1.6;
+  padding-bottom: 74px; /* place pour le bouton fixe */
+}
+.container { width: min(1120px, 92%); margin-inline: auto; }
+img { max-width: 100%; }
+a { color: var(--r-orange-fonce); }
+
+.maquette-bandeau {
+  background: var(--r-terre);
+  color: #fff;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 7px 10px;
+}
+
+/* Header */
+.r-header { background: var(--r-creme); border-bottom: 1px solid var(--r-sable); }
+.r-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+.r-brand { font-family: "Playfair Display SC", Georgia, serif; font-size: 1.2rem; font-weight: 700; color: var(--r-terre); }
+.r-brand span { color: var(--r-orange); }
+.r-nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.r-nav a { font-size: 0.86rem; font-weight: 700; text-decoration: none; color: var(--r-terre-clair); }
+.r-nav a:hover { color: var(--r-orange); }
+
+/* Hero */
+.r-hero { position: relative; min-height: 520px; display: flex; align-items: center; overflow: hidden; background: var(--r-terre); }
+.r-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.r-hero-voile { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(63,36,22,.55), rgba(63,36,22,.88)); }
+.r-hero-content { position: relative; color: #fff; padding: 80px 0; }
+.r-eyebrow { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #f7b26e; margin: 0 0 12px; }
+.r-eyebrow-dark { color: var(--r-orange-fonce); }
+.r-hero h1 { font-family: "Playfair Display SC", Georgia, serif; font-size: clamp(2.6rem, 9vw, 4.6rem); margin: 0 0 8px; line-height: 1.05; }
+.r-hero-phrase { font-size: clamp(1.1rem, 4vw, 1.5rem); margin: 0 0 28px; color: var(--r-sable); }
+.r-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.r-btn { display: inline-block; border-radius: 999px; padding: 13px 22px; font-weight: 700; font-size: 0.95rem; text-decoration: none; }
+.r-btn-orange { background: var(--r-orange); color: #fff; }
+.r-btn-orange:hover { background: var(--r-orange-fonce); }
+.r-btn-outline { border: 2px solid rgba(255,255,255,.75); color: #fff; }
+.r-btn-outline:hover { background: rgba(255,255,255,.14); }
+
+/* Sections */
+.r-section { padding: 64px 0; }
+.r-section-clair { background: var(--r-sable); }
+.r-section h2 { font-family: "Playfair Display SC", Georgia, serif; font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0 0 12px; color: var(--r-terre); }
+.r-intro { max-width: 640px; color: #5b4636; margin: 0 0 32px; }
+.r-centre { text-align: center; }
+
+/* Carte */
+.r-carte-groupe { margin-bottom: 34px; }
+.r-carte-groupe h3 { font-family: "Playfair Display SC", Georgia, serif; color: var(--r-orange-fonce); font-size: 1.35rem; margin: 0 0 14px; }
+.r-plats { display: grid; gap: 12px; }
+.r-plat { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; background: #fff; border: 1px solid #ecdcc6; border-radius: 12px; padding: 16px 18px; }
+.r-plat strong { display: block; color: var(--r-terre); }
+.r-plat span { font-size: 0.86rem; color: #7a6453; }
+.r-plat b { color: var(--r-orange-fonce); white-space: nowrap; }
+
+/* Galerie */
+.r-galerie { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.r-galerie img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; display: block; background: #e8d8c2; }
+
+/* Horaires */
+.r-horaires-carte { display: inline-block; text-align: left; background: #fff; border: 1px solid #ecdcc6; border-radius: var(--r-radius); padding: 26px 32px; box-shadow: 0 12px 30px rgba(63,36,22,.08); }
+.r-ouvert { color: var(--r-vert); font-weight: 700; margin: 0 0 10px; }
+.r-point-vert { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--r-vert); margin-right: 8px; }
+.r-horaires-ligne { margin: 0 0 6px; font-size: 1.1rem; }
+.r-note { font-size: 0.82rem; color: #8a7868; margin: 0; }
+
+/* Avis */
+.r-avis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.r-avis { background: #fff; border: 1px solid #ecdcc6; border-radius: var(--r-radius); padding: 22px; }
+.r-etoiles { color: var(--r-orange); letter-spacing: 2px; margin-bottom: 10px; }
+.r-avis p { margin: 0 0 12px; }
+.r-avis small { color: #7a6453; }
+.r-avis em, .r-footer em { font-size: 0.78rem; color: #a08e7e; }
+
+/* Contact + Maps */
+.r-contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 26px; align-items: start; }
+.r-adresse h3 { font-family: "Playfair Display SC", Georgia, serif; color: var(--r-terre); margin: 0 0 10px; }
+.r-adresse p { margin: 0 0 12px; }
+.r-adresse .r-btn { margin-top: 6px; }
+.r-maps iframe { width: 100%; height: 340px; border: 0; border-radius: var(--r-radius); display: block; background: var(--r-sable); }
+.r-liens-socials { display: flex; gap: 14px; margin-top: 16px; flex-wrap: wrap; font-size: 0.9rem; font-weight: 700; }
+
+/* Footer */
+.r-footer { background: var(--r-terre); color: var(--r-sable); padding: 44px 0 20px; }
+.r-footer a { color: #f7b26e; }
+.r-footer-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.r-footer strong { font-family: "Playfair Display SC", Georgia, serif; font-size: 1.2rem; color: #fff; }
+.r-footer p { margin: 6px 0; font-size: 0.92rem; }
+.r-footer-note { text-align: center; font-size: 0.78rem; color: #b9a08c; margin-top: 24px; }
+
+/* Bouton WhatsApp fixe */
+.r-wa-fixed {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: min(340px, 92%);
+  min-height: 52px;
+  background: var(--r-vert);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(10,80,40,.4);
+}
+.r-wa-fixed:hover { background: #12753b; }
+
+@media (min-width: 780px) {
+  .r-nav { gap: 26px; }
+  .r-galerie { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .r-galerie img { height: 260px; }
+  .r-hero { min-height: 620px; }
+  .r-wa-fixed { left: auto; right: 24px; bottom: 24px; transform: none; width: auto; padding-inline: 24px; }
+  body { padding-bottom: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
