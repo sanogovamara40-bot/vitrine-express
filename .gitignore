@@ -1,3 +1,5 @@
 videos/*.mp4
 !videos/*-web.mp4
 !videos/variantes/
+!videos/tiktok-motion-abidjan.mp4
+videos/parts-temp/
